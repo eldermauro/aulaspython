@@ -56,3 +56,5 @@ frutas_lista = frutas_usuario.split(', ')
 
 print(frutas_lista)
 
+
+
