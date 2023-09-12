@@ -54,3 +54,27 @@ print(Funcionarios.idade_funcionario(usuario1))
 # exercico
 # criem uma class chamada Automoveis com parametros =  marca, ano
 # obejtos locadora1, locadora2, locadora3 e imprima valores marca, ano
+
+
+# criar a classe
+class Computador:
+    def __init__(self, marca, memoria_ram, placa_de_video):
+        self.marca = marca
+        self.memoria_ram = memoria_ram
+        self.placa_de_video = placa_de_video
+
+    def ExibirInformacoes(self):
+        print(self.marca, self.memoria_ram, self.placa_de_video)
+
+    def Desligar(self):
+        print('estou desligando')        
+       
+# criar objeto
+computador1 = Computador('Asus', '16gb', 'Samsung')
+
+computador1.ExibirInformacoes()
+computador1.Desligar()
+
+# exercico
+# criem uma class chamada Automoveis com parametros =  marca, ano
+# obejtos locadora1, locadora2, locadora3 e imprima valores marca, ano
