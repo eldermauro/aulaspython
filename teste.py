@@ -1,5 +1,5 @@
 import moeda
-from moeda import diminuir
+#from moeda import diminuir
 
 p = float(input('digite o Preço: R$'))
 
