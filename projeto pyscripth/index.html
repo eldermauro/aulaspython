@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Link pyscripth-->
+    <!--Link pyscripth  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>-->
  
+   
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 
 
@@ -33,11 +34,12 @@
                 input_task = Element('input_task')
                 task = input_task.element.value
                 
-                y = list(filter(lambda x: x['content'] == task, task))
+                y = list(filter(lambda x: x['content'] == task, tasks))
 
                 if len(y) > 0:
                     message = Element('message')
                     message.element.style.display = 'flex'
+                    return None
 
 
                 dict_task = {  'task-id': len(task),
@@ -48,8 +50,6 @@
                 tasks.append(dict_task)
                 input_task.element.value = ""
                 atualiza_lista()
-                
-                
         </py-script>
 
     <main>
